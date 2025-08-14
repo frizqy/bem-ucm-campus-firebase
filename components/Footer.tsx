@@ -18,11 +18,12 @@ export default function Footer() {
               Badan Eksekutif Mahasiswa adalah organisasi kemahasiswaan yang berperan sebagai lembaga eksekutif di tingkat universitas, berkomitmen untuk mewakili aspirasi dan kepentingan seluruh mahasiswa.
             </p>
             <div className="flex space-x-4">
+              <a href="https://www.instagram.com/bem.ucm/" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors cursor-pointer">
+                <i className="ri-instagram-line text-lg"></i>
+              </a>
+              {/*
               <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors cursor-pointer">
                 <i className="ri-facebook-fill text-lg"></i>
-              </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors cursor-pointer">
-                <i className="ri-instagram-line text-lg"></i>
               </a>
               <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors cursor-pointer">
                 <i className="ri-twitter-line text-lg"></i>
@@ -30,6 +31,7 @@ export default function Footer() {
               <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors cursor-pointer">
                 <i className="ri-youtube-line text-lg"></i>
               </a>
+              */}
             </div>
           </div>
 
@@ -47,7 +49,7 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-400">
               <li className="flex items-center space-x-2">
                 <i className="ri-map-pin-line"></i>
-                <span>Jl. Kampus No. 1, Jakarta</span>
+                <span>Jl. Bambu I No.102, Durian, Kec. Medan Tim., Kota Medan, Sumatera Utara 20235</span>
               </li>
               <li className="flex items-center space-x-2">
                 <i className="ri-phone-line"></i>
@@ -55,14 +57,14 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-2">
                 <i className="ri-mail-line"></i>
-                <span>info@bem.ac.id</span>
+                <span>bem.ucmcampus@gmail.com</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 BEM Universitas. Semua hak cipta dilindungi.</p>
+          <p>&copy; 2025 BEM Politeknik Unggulan Cipta Mandiri Medan.</p>
         </div>
       </div>
     </footer>

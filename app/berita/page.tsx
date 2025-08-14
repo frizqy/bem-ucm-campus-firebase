@@ -11,7 +11,7 @@ export default function BeritaPage() {
       <Header />
       <main>
         <BeritaHero />
-        <BeritaCategories />
+        {/*<BeritaCategories />*/}
         <BeritaGrid />
       </main>
       <Footer />

@@ -103,6 +103,7 @@ export default function KontakPage() {
               </div>
 
               {/* Contact Form */}
+              {/*
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-8">Kirim Pesan</h2>
                 <form className="bg-white rounded-xl shadow-lg p-8">
@@ -172,6 +173,7 @@ export default function KontakPage() {
                   </button>
                 </form>
               </div>
+              */}
             </div>
           </div>
         </section>
@@ -188,7 +190,7 @@ export default function KontakPage() {
             
             <div className="bg-white rounded-xl shadow-lg overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.8195613!3d-6.2087634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5390917b759%3A0x6b45e67356080477!2sMonas!5e0!3m2!1sen!2sid!4v1635174240000!5m2!1sen!2sid"
+                src="https://maps.google.com/maps?q=Jl.+Bambu+I+No.102%2C+Durian%2C+Kec.+Medan+Tim.%2C+Kota+Medan%2C+Sumatera+Utara+20235&t=&z=18&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}

@@ -15,7 +15,7 @@ export default function TentangPage() {
         <TentangHero />
         <OrganisasiSection />
         <VisiMisiSection />
-        <StrukturSection />
+        {/*<StrukturSection />*/}
       </main>
       <Footer />
     </div>
