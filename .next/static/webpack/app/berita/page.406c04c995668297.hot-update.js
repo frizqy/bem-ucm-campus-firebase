@@ -1,0 +1,22 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("app/berita/page",{
+
+/***/ "(app-pages-browser)/./app/news.json":
+/*!***********************!*\
+  !*** ./app/news.json ***!
+  \***********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = /*#__PURE__*/JSON.parse('[{"id":2,"slug":"my-first-post-1","title":"New Public Park Opens, Featuring Innovative Eco-Friendly Design","date":"August 23, 2025","category":"Environment","image":"https://via.placeholder.com/600x400?text=Environment+News+1","content":"A new park, hailed for its innovative and sustainable design, officially opened to the public today. The park incorporates rain gardens, solar-powered lighting, and a new urban tree canopy, setting a new standard for green spaces..."},{"id":1,"slug":"my-first-post","title":"Local Team Wins Championship After Dramatic Comeback","date":"August 24, 2025","category":"Sports","image":"https://images.unsplash.com/photo-1755770355297-1526e33a3c82?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D","content":"In a thrilling match that went down to the wire, the local team clinched the championship title with a last-minute goal. The victory, a result of a dramatic comeback, has sent the city into a frenzy of celebration..."}]');
+
+/***/ })
+
+});

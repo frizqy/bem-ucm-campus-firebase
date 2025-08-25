@@ -1,14 +1,15 @@
 
 'use client';
 import Link from 'next/link';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import Header from '@/app/components/Header';
+import Footer from '@/app/components/Footer';
 
 export default function KontakPage() {
   return (
     <div className="min-h-screen">
       <Header />
-      <div className="bg-white">
+      <div className="bg-white
+      ">
         {/* Hero Section */}
         <section className="relative bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 py-20">
           <div 

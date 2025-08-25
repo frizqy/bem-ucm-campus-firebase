@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "b0318f01fc17b9b4d717813c839ed8fe",
-    "previewModeSigningKey": "985cc9afa6d6269c81467471ba451b8888446516ace744e97bfd2cf618c5d27b",
-    "previewModeEncryptionKey": "8070d349a90be3637dc876d8ae69288a7a5711b217e89b379ba23b714217d363"
-  }
-}
+{"version":4,"routes":{"/berita/my-first-post":{},"/berita/my-first-post-1":{}},"dynamicRoutes":{"/berita/[slug]":{"fallback":null}},"notFoundRoutes":[],"preview":{"previewModeId":"c9e70114c9c5cb057e082cf9d83d06fe","previewModeSigningKey":"feb689c8f8ddfd1c21dd5c118c33188fd635a9d80f55a16cf91fc481bdf008e9","previewModeEncryptionKey":"a74c682068bd0a970ec836b4ecec2e410b2ec2e9fce397be6700f9baf98b4867"}}
