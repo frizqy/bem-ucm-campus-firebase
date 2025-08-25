@@ -1,6 +1,7 @@
 import newsData from '../../news.json';
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
+import { promises } from 'dns';
 
 export async function generateStaticParams() {
   return newsData.map(article => ({
@@ -8,9 +9,10 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function NewsArticle({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+export default async function NewsArticle({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
   const article = newsData.find(article => article.slug === slug);
+  
   if (!article) {
     return null;
   }
