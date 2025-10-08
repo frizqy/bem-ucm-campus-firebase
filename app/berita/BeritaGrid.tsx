@@ -25,17 +25,15 @@ export default function BeritaGrid() {
             <p className="text-gray-600">Menampilkan {allNews.length} berita kegiatan BEM</p>
           </div>
           <div className="flex items-center space-x-4">
-            <select className="border border-gray-300 rounded-lg px-4 py-2 pr-8 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-              <option>Terbaru</option>
-              <option>Terpopuler</option>
-              <option>A-Z</option>
-            </select>
+            
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {currentNews.map((article) => (
-            <article key={article.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+            <Link
+            href={`/berita/${article.slug}`}
+             key={article.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="relative">
                 <img 
                   src={article.image} 
@@ -81,7 +79,7 @@ export default function BeritaGrid() {
                   </div>
                 </div>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
 

@@ -6,6 +6,7 @@ import TentangHero from './TentangHero';
 import OrganisasiSection from './OrganisasiSection';
 import VisiMisiSection from './VisiMisiSection';
 import StrukturSection from './StrukturSection';
+import StrukturOrganisasi from './StrukturOrganisasi';
 
 export default function TentangPage() {
   return (
@@ -15,6 +16,7 @@ export default function TentangPage() {
         <TentangHero />
         <OrganisasiSection />
         <VisiMisiSection />
+        <StrukturOrganisasi />
         {/*<StrukturSection />*/}
       </main>
       <Footer />

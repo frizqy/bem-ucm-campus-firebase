@@ -15,7 +15,7 @@ export default function KontakPage() {
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
             style={{
-              backgroundImage: `url('https://readdy.ai/api/search-image?query=Modern%20university%20campus%20building%20with%20students%20walking%20around%2C%20professional%20campus%20environment%20with%20blue%20sky%20and%20green%20trees%2C%20academic%20atmosphere%20with%20contemporary%20architecture%20and%20learning%20spaces&width=1200&height=600&seq=kontak-hero&orientation=landscape')`
+              backgroundImage: `url('/image/bg4.png')`
             }}
           ></div>
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
@@ -28,8 +28,8 @@ export default function KontakPage() {
 
         {/* Contact Information */}
         <section className="py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="">
               {/* Contact Details */}
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-8">Informasi Kontak</h2>
@@ -38,7 +38,7 @@ export default function KontakPage() {
                 <div className="bg-white rounded-xl shadow-lg p-6 mb-6 border-l-4 border-red-500">
                   <div className="flex items-center mb-4">
                     <div className="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mr-4">
-                      <i className="ri-gmail-fill text-white text-xl"></i>
+                      <i className="ri-mail-fill text-white text-xl"></i>
                     </div>
                     <h3 className="text-xl font-semibold text-gray-900">Email Resmi</h3>
                   </div>
@@ -216,12 +216,6 @@ export default function KontakPage() {
                 className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors cursor-pointer whitespace-nowrap"
               >
                 Pelajari Tentang Kami
-              </Link>
-              <Link 
-                href="/program" 
-                className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors cursor-pointer whitespace-nowrap"
-              >
-                Lihat Program Kami
               </Link>
             </div>
           </div>

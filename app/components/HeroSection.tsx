@@ -5,9 +5,9 @@ import Link from 'next/link';
 export default function HeroSection() {
   return (
     <section 
-      className="relative bg-gradient-to-br from-blue-600 to-purple-700 min-h-[600px] flex items-center"
+      className="relative min-h-[600px] flex items-center"
       style={{
-        backgroundImage: `linear-gradient(rgba(37, 99, 235, 0.85), rgba(126, 34, 206, 0.85)), url('https://readdy.ai/api/search-image?query=Modern%20university%20campus%20with%20students%20walking%20together%2C%20vibrant%20student%20life%20atmosphere%2C%20contemporary%20architecture%20buildings%20in%20background%2C%20natural%20lighting%2C%20professional%20photography%20style%2C%20wide%20angle%20shot%20showing%20campus%20community%20spirit%20and%20academic%20environment%2C%20clean%20and%20inspiring%20educational%20setting&width=1200&height=600&seq=hero-bem&orientation=landscape')`,
+        backgroundImage: `url('/image/bg1.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
@@ -29,12 +29,6 @@ export default function HeroSection() {
               className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-full font-semibold text-lg transition-all transform hover:scale-105 whitespace-nowrap cursor-pointer"
             >
               Tentang Kami
-            </Link>
-            <Link 
-              href="/program" 
-              className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-full font-semibold text-lg transition-all transform hover:scale-105 whitespace-nowrap cursor-pointer"
-            >
-              Program Kami
             </Link>
           </div>
         </div>

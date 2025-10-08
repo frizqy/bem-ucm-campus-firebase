@@ -1,4 +1,4 @@
-// File: /home/hack/dummy-project/bem-ucmcampus/app/berita/page.tsx
+// File: C:\Users\Lenovo\Documents\project\bem-ucmcampus-web\app\berita\page.tsx
 import * as entry from '../../../../app/berita/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

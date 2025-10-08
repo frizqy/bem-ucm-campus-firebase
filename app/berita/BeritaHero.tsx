@@ -6,7 +6,7 @@ export default function BeritaHero() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('https://readdy.ai/api/search-image?query=Modern%20university%20campus%20with%20students%20engaged%20in%20various%20activities%2C%20academic%20buildings%20in%20background%2C%20vibrant%20student%20life%20atmosphere%2C%20natural%20outdoor%20lighting%2C%20contemporary%20educational%20environment%2C%20diverse%20students%20collaborating%20and%20studying%20together%2C%20professional%20photography%20style&width=1200&height=400&seq=berita-hero&orientation=landscape')`
+          backgroundImage: `url('/image/bg3.jpg')`
         }}
       >
         <div className="absolute inset-0 bg-blue-900/70"></div>

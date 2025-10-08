@@ -8,24 +8,18 @@ export default function OrganisasiSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <img 
-              src="https://readdy.ai/api/search-image?query=University%20student%20government%20organization%20members%20working%20together%20in%20modern%20office%20space%2C%20diverse%20group%20of%20young%20leaders%20collaborating%20on%20projects%2C%20professional%20workspace%20with%20computers%20and%20documents%2C%20bright%20natural%20lighting%2C%20contemporary%20university%20administration%20building%20interior%2C%20teamwork%20and%20leadership%20atmosphere&width=600&height=400&seq=organisasi-bem&orientation=landscape"
+              src="/image/bg5.jpg"
               alt="Organisasi BEM"
               className="rounded-lg shadow-lg object-cover w-full h-80"
             />
           </div>
           <div>
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Apa itu Badan Eksekutif Mahasiswa?
+              Tujuan BEM UCM Campus Medan
             </h2>
             <div className="space-y-4 text-gray-700">
               <p>
-                Badan Eksekutif Mahasiswa (BEM) adalah lembaga eksekutif tertinggi di tingkat universitas yang berperan sebagai representasi resmi seluruh mahasiswa. BEM bertanggung jawab untuk menjalankan program-program kemahasiswaan dan menjadi penghubung antara mahasiswa dengan pihak universitas.
-              </p>
-              <p>
-                Sebagai organisasi kemahasiswaan, BEM memiliki kewenangan untuk mengambil kebijakan-kebijakan yang berkaitan dengan kesejahteraan dan kepentingan mahasiswa. Organisasi ini juga berperan dalam mengembangkan potensi mahasiswa melalui berbagai program akademik dan non-akademik.
-              </p>
-              <p>
-                BEM terdiri dari mahasiswa-mahasiswa terpilih yang memiliki dedikasi tinggi untuk melayani kepentingan bersama dan membawa perubahan positif bagi kehidupan kampus yang lebih baik.
+                Tujuan utama BEM UCM Campus Medan adalah menjadi wadah aspirasi resmi bagi seluruh mahasiswa dan menjembatani komunikasi efektif dengan pihak kampus, sekaligus berfungsi sebagai motor penggerak untuk mengembangkan potensi mahasiswa di bidang vokasi, kepemimpinan, dan kewirausahaan melalui program kerja yang sinergis dengan Unit Kegiatan Mahasiswa (UKM), demi menghasilkan lulusan yang berintegritas, kompeten, dan siap berkontribusi nyata di dunia kerja dan masyarakat.
               </p>
             </div>
             

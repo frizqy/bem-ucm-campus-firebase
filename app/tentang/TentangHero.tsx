@@ -4,9 +4,9 @@
 export default function TentangHero() {
   return (
     <section 
-      className="relative bg-gradient-to-br from-blue-600 to-purple-700 min-h-[400px] flex items-center"
+      className="relative min-h-[400px] flex items-center"
       style={{
-        backgroundImage: `linear-gradient(rgba(37, 99, 235, 0.85), rgba(126, 34, 206, 0.85)), url('https://readdy.ai/api/search-image?query=Professional%20university%20student%20council%20meeting%20with%20diverse%20students%20discussing%20around%20conference%20table%2C%20modern%20meeting%20room%20with%20glass%20walls%2C%20natural%20lighting%2C%20contemporary%20office%20setting%2C%20students%20in%20business%20casual%20attire%2C%20collaborative%20atmosphere%2C%20inspiring%20educational%20leadership%20environment&width=1200&height=400&seq=tentang-hero&orientation=landscape')`,
+        backgroundImage: ` url('/image/bg2.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'

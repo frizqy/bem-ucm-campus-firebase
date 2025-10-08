@@ -32,6 +32,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id" suppressHydrationWarning={true}>
+      <head>
+        <link rel="shortcut icon" href="/image/LOGO-BEM-UCM.png" type="image/png" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${pacifico.variable} antialiased`}
       >
