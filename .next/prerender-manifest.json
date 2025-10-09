@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/berita/my-first-post-1":{},"/berita/my-first-post":{},"/berita/PKKMB-UCM-Campus-2025":{},"/berita/Donor-Darah-2025":{},"/berita/Acara Semarak Budaya":{}},"dynamicRoutes":{"/berita/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/berita/[slug]","routeRegex":"^\\/berita\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"d2521ab3965721610004dac81ee0cd59","previewModeSigningKey":"40e210b77ab83f29b0a4a28aae119b937fd0bbe908424c7fa0ab762129db3a03","previewModeEncryptionKey":"9bc13669ead44bd33ac35fe15e318d5a71d134999ba424f854862c81901e4a4b"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "4ea704b6733d2ff658292c8957ded5c6",
+    "previewModeSigningKey": "54129aa8259bf15a71012f26080991dd67087378e4433eacd4afe6704dc97215",
+    "previewModeEncryptionKey": "f27b746dc047e67f24e6ae3e419a47d8de350ddd64545cffdf9ba6a426a3fd50"
+  }
+}
