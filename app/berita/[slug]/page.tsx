@@ -41,8 +41,10 @@ export default async function NewsArticle({ params }: { params: Promise<{ slug: 
               className="w-full h-64 object-cover rounded-lg mb-6"
             />
             
-            <div className="prose max-w-none">
-              <p className="text-gray-700 leading-relaxed">{article.content}</p>
+            <div className="prose max-w-none flex flex-col gap-6">
+              <p className="text-gray-700 leading-relaxed">{article.content1}</p>
+              <p className="text-gray-700 leading-relaxed">{article.content1}</p>
+              <p className="text-gray-700 leading-relaxed">{article.content1}</p>
             </div>
           </div>
         </main>

@@ -97,9 +97,8 @@ export default function KontakPage() {
                     </div>
                     <h3 className="text-xl font-semibold text-gray-900">Alamat Sekretariat</h3>
                   </div>
-                  <p className="text-gray-600 mb-2">Gedung Student Center Lt. 2</p>
-                  <p className="text-gray-600 mb-2">Jl. Kampus Raya No. 1, Jakarta Selatan</p>
-                  <p className="text-gray-600">Jakarta 12345</p>
+                  <p className="text-gray-600 mb-2">Jl. Bambu I No.102, Durian, Kec. Medan Tim., Kota Medan</p>
+                  <p className="text-gray-600">Sumatera Utara 20235</p>
                 </div>
               </div>
 
