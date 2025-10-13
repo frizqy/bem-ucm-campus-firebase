@@ -210,7 +210,7 @@ const ministries = [
       {/* Section 3: Ministries and Operational Divisions */}
       <section className="pb-[20px]">
         <h2 className="text-3xl font-bold text-gray-800 text-center mb-8 border-b-2 border-red-500 inline-block mx-auto pb-1">
-          Sisanya
+          Divisi
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {ministries.map(({ name, head, headName, imageUrl, icon, color, focus }, index) => (
