@@ -2,6 +2,7 @@ import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
 import { getConnection } from '@/lib/query';
 import { RowDataPacket } from 'mysql2/promise';
+import { use } from 'react';
 interface PageProps {
   params: {
     slug: string;
@@ -19,9 +20,8 @@ export async function generateStaticParams() {
         slug: article.slug,
     })) : [];
 }
-export default async function NewsArticle({ params }: PageProps) {
-    const { slug } = params;
-    
+export default async function NewsArticle({params}: {params: Promise<{ slug: string }>}) {
+    const { slug } = use(params);
     const db = await getConnection(); 
     const sql = `SELECT * FROM news WHERE slug = ?`; 
     const [articles] = await db.query(sql, [slug]);
@@ -29,7 +29,7 @@ export default async function NewsArticle({ params }: PageProps) {
     const article = (articles as RowDataPacket[])[0];
     
     if (!article) {
-        return null; 
+        return null;
     }
 
     const formattedDate = new Date(article.date).toLocaleDateString('en-US', {
