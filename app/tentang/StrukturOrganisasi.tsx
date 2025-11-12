@@ -125,7 +125,6 @@ const ministries = [
 
   return (
     <div className="max-w-7xl mx-auto">
-      {/* Header */}
       <header className="text-center mb-12 pt-8">
         <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-2 tracking-tight">
         Struktur Organisasi BEM UCM Campus Medan
@@ -135,7 +134,6 @@ const ministries = [
         </p>
       </header>
 
-      {/* Section 1: Executive Leadership (President & Vice President) */}
       <section className="mb-16">
         <h2 className="text-3xl font-bold text-gray-800 text-center mb-8 border-b-2 border-red-500 inline-block mx-auto pb-1">
           Pimpinan

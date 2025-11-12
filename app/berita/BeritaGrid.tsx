@@ -45,7 +45,6 @@ export default function BeritaGrid() {
                     {article.category}
                   </span>
                 </div>
-                
               </div>
               
               <div className="p-6">
@@ -59,7 +58,6 @@ export default function BeritaGrid() {
                 <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2 leading-tight">
                   {article.title}
                 </h3>
-                
                 <div className="flex items-center justify-between">
                   <Link 
                     href={`/berita/${article.slug}`}
@@ -69,14 +67,6 @@ export default function BeritaGrid() {
                     <i className="ri-arrow-right-line ml-2 group-hover:translate-x-1 transition-transform"></i>
                   </Link>
                   
-                  <div className="flex items-center space-x-3">
-                    <button className="text-gray-400 hover:text-red-500 transition-colors cursor-pointer">
-                      <i className="ri-heart-line text-lg"></i>
-                    </button>
-                    <button className="text-gray-400 hover:text-blue-500 transition-colors cursor-pointer">
-                      <i className="ri-share-line text-lg"></i>
-                    </button>
-                  </div>
                 </div>
               </div>
             </Link>

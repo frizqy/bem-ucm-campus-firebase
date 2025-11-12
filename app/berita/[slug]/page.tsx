@@ -9,9 +9,8 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function NewsArticle({ params }: { params: Promise<{ slug: string }> }) {
-  const { slug } = await params;
-  const article = newsData.find(article => article.slug === slug);
+export default async function NewsArticle({ params: { slug } }) {
+  const article = await getResponse(`/berita/${slug}`);
   
   if (!article) {
     return null;
