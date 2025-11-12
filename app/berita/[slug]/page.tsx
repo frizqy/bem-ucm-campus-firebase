@@ -20,7 +20,7 @@ export async function generateStaticParams() {
     })) : [];
 }
 export default async function NewsArticle({ params }: PageProps) {
-    const { slug } = await params;
+    const { slug } = params;
     
     const db = await getConnection(); 
     const sql = `SELECT * FROM news WHERE slug = ?`; 
