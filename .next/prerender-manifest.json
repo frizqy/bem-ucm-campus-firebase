@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "6175dcba1d5154a77ae5571207b9353f",
-    "previewModeSigningKey": "3059334cf7b3b3e824be1f96d4365ab037ebf4be1ce3ee65dc8dd91f9fc32682",
-    "previewModeEncryptionKey": "851177bd475cd77a498494be1c858a7999c77de9fadbb97d157ce5d4855ca5cc"
-  }
-}
+{"version":4,"routes":{"/berita/Acara-Semarak-Budaya":{},"/berita/Donor-Darah-2025":{},"/berita/PKKMB-UCM-Campus-2025":{},"/berita/Wisuda-Angkatan-2022":{}},"dynamicRoutes":{"/berita/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/berita/[slug]","routeRegex":"^\\/berita\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"1a9afbdeb5f4196373a4b949d17cef74","previewModeSigningKey":"c7c9b5a791dcf3ba8eb0b8c2ad490b8dab2b895b5025cff903187104ae0ee3ac","previewModeEncryptionKey":"cef4b117d6fb6bc199d15a66ad8ab07bafd25e47978d6ba16aec1b3a3c577a0a"}}

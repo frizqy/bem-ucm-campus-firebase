@@ -16,20 +16,25 @@
       "static/chunks/main-app.js",
       "static/chunks/app/tentang/page.js"
     ],
-    "/api/organisasi/route": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/api/organisasi/route.js"
-    ],
     "/berita/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/berita/page.js"
     ],
+    "/api/organisasi/route": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/api/organisasi/route.js"
+    ],
     "/api/posts/route": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/api/posts/route.js"
+    ],
+    "/berita/[slug]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/berita/[slug]/page.js"
     ]
   }
 }
