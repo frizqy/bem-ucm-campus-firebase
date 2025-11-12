@@ -2,21 +2,29 @@
 'use client';
 import Link from 'next/link';
 import news from '../news.json'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function NewsSection() {
-  const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 3;
-
-  const totalPages = Math.ceil(news.length / itemsPerPage);
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const currentNews = news.slice(startIndex, startIndex + itemsPerPage);
-
-  const handlePageChange = (page: number) => {
-    setCurrentPage(page);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
+    const [news, setNews] = useState([])
+    useEffect(() => {
+          const fetchData = async () => {
+          const data = await fetch('/api/posts')
+          const response = await data.json()
+          setNews(response.news) 
+          console.log({response})
+        }
+          
+        fetchData()
+      }, [])
+    const [currentPage, setCurrentPage] = useState(1);
+    const itemsPerPage = 3;
+    const totalNewsCount = news.length;
+    const totalPages = Math.ceil(totalNewsCount / itemsPerPage);
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const handlePageChange = (page: number) => {
+      setCurrentPage(page);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -31,7 +39,7 @@ export default function NewsSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {currentNews.map((article) => (
+          {news.map((article: any) => (
             <Link
             href={`/berita/${article.slug}`}
              key={article.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">

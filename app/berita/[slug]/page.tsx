@@ -1,20 +1,33 @@
-import newsData from '../../news.json';
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
-import { promises } from 'dns';
+import { executeSQL, getConnection } from '@/lib/query';
+import { NextResponse } from 'next/server';
+import { RowDataPacket } from 'mysql2/promise';
+import { useEffect, useState } from 'react';
 
 export async function generateStaticParams() {
-  return newsData.map(article => ({
-    slug: article.slug,
-  }));
+    const db = await getConnection();
+    
+    const sql = "SELECT slug FROM news"; 
+    
+    const [news] = await db.query(sql); 
+    
+    return Array.isArray(news) && news.map((article: any) => ({
+        slug: article.slug,
+    }));
 }
 
-export default async function NewsArticle({ params: { slug } }) {
-  const article = await getResponse(`/berita/${slug}`);
-  
-  if (!article) {
-    return null;
-  }
+export default async function NewsArticle({ params }: { params: { slug: string } }) {
+    const { slug } = await params;
+    
+    const db = await getConnection(); 
+    const sql = `SELECT * FROM news WHERE slug = ?`; 
+    const [articles] = await db.query(sql, [slug])
+    const article = (articles as RowDataPacket[])[0];
+    
+    if (!article) {
+        return null; 
+    }
 
   return (
     <div className="min-h-screen">
