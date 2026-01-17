@@ -1,0 +1,69 @@
+{
+  "staff": {
+    "1": {
+      "role": "Ketua BEM",
+      "name": "Ferdinan",
+      "imageUrl": "/fotopengurus/ferdinan.jpg"
+    },
+    "2": {
+      "role": "Wakil Ketua BEM",
+      "name": "Adhyaksa Natha Dwi Sembiring",
+      "imageUrl": "/fotopengurus/aksa.jpg"
+    },
+    "3": {
+      "role": "Sekretaris",
+      "name": "Chyntia Ayu Ramadani",
+      "imageUrl": "/fotopengurus/cyntia.jpg"
+    },
+    "4": {
+      "role": "Bendahara",
+      "name": "Defani Pramesti",
+      "imageUrl": "/fotopengurus/defani.jpg"
+    },
+    "5": {
+      "role": "Event",
+      "name": "Naisyila Amanda Nasution",
+      "imageUrl": "/fotopengurus/naisyila.jpg"
+    },
+    "6": {
+      "role": "Event",
+      "name": "Nayara Azzahra",
+      "imageUrl": "https://images.unsplash.com/photo-1508214751196-cadf41b18ce0?q=80&w=250&h=250&fit=crop&auto=format&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    "7": {
+      "role": "Public Relation",
+      "name": "Valentino Yap",
+      "imageUrl": "/fotopengurus/valentino.jpg"
+    },
+    "8": {
+      "role": "Public Relation",
+      "name": "Dinda Ayu Sukmadana",
+      "imageUrl": "/fotopengurus/dinda.jpg"
+    },
+    "9": {
+      "role": "Logistik",
+      "name": "Zio Sultani",
+      "imageUrl": "/fotopengurus/zio.jpg"
+    },
+    "10": {
+      "role": "Logistik",
+      "name": "Adryan Pratama",
+      "imageUrl": "/fotopengurus/adryan.jpg"
+    },
+    "11": {
+      "role": "Dokumentasi",
+      "name": "Nur Halisa",
+      "imageUrl": "/fotopengurus/lisa.jpg"
+    },
+    "12": {
+      "role": "Dokumentasi",
+      "name": "Fatia Tri Anisa",
+      "imageUrl": "/fotopengurus/fatia.jpg"
+    },
+    "13": {
+      "role": "Dokumentasi",
+      "name": "Frizqy Mahrizal",
+      "imageUrl": "/fotopengurus/frizqy.jpg"
+    }
+  }
+}

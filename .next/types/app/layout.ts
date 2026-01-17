@@ -1,4 +1,4 @@
-// File: C:\Users\Lenovo\Documents\project\bem-ucmcampus-web-1\app\layout.tsx
+// File: C:\Users\Lenovo\Documents\project\bem-ucmcampus-web-firebase\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

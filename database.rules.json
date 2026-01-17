@@ -1,0 +1,9 @@
+{
+  "rules": {
+    "event": {
+      ".read": true,
+      ".write": "auth != null",
+      ".indexOn": ["slug"]
+    }
+  }
+}

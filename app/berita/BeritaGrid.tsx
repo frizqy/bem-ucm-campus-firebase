@@ -1,59 +1,49 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { getDatabase , ref, onValue, get, child } from "firebase/database";
+import { app } from '@/firebase/firebaseconfig';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 
 export default function BeritaGrid() {
-  const [userCount, setUserCount] = useState(0);
   const [news, setNews] = useState([]);
-  
-  const [isLoading, setIsLoading] = useState(true); 
-  
+  const [isLoading, setIsLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 9;
-  
-  useEffect(() => {
-    async function fetchUserCount() {
-      try {
-         const response = await fetch('/api/posts');
-         const data = await response.json();
-         setUserCount(data.count || 0); 
-      } catch (error) {
-          console.error("Error fetching user count:", error);
-      }
-    }
-    fetchUserCount();
-  }, []);
 
   useEffect(() => {
     const fetchData = async () => {
-      setIsLoading(true); 
+      const dbRef = ref(getDatabase(app));
       try {
-        const data = await fetch('/api/posts');
-        const response = await data.json();
-        setNews(response.news || []); 
-        console.log({response});
+        const snapshot = await get(child(dbRef, 'event'));
+        if (snapshot.exists()) {
+          const data = snapshot.val();
+          const newsArray = Object.keys(data).map(key => ({
+            id: key,
+            ...data[key]
+          }));
+          setNews(newsArray.reverse()); 
+        } else {
+          console.log("No data available");
+        }
       } catch (error) {
-        console.error("Error fetching news:", error);
-        setNews([]);
+        console.error("Error fetching data:", error);
       } finally {
-        setIsLoading(false); 
+        setIsLoading(false);
       }
-    }
+    };
+
     fetchData();
   }, []);
-  
   const totalNewsCount = news.length;
-  const totalPages = Math.ceil(totalNewsCount / itemsPerPage); 
+  const totalPages = Math.ceil(totalNewsCount / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
-  const endIndex = startIndex + itemsPerPage;
-  const currentNews = news.slice(startIndex, endIndex);
+  const currentNews = news.slice(startIndex, startIndex + itemsPerPage);
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-  
+
   const renderSkeleton = () => (
     [...Array(itemsPerPage)].map((_, index) => (
       <div key={index} className="bg-gray-100 rounded-xl shadow-lg overflow-hidden animate-pulse h-80">

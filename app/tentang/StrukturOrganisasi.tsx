@@ -1,25 +1,9 @@
-import { getConnection } from "@/lib/db";
+'use client';
 import { NextResponse } from "next/server";
 import { useEffect, useState } from "react";
+import anggota from "@/app/staff_organization.json"
 
 export default function StrukturOrganisasi() {
-  
-  
-  const [news, setNews] = useState([]);
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const data = await fetch('/api/organisasi');
-        const response = await data.json();
-        setNews(response.news || []); 
-        console.log({response});
-      } catch (error) {
-        console.error("Error fetching news:", error);
-        setNews([]);
-      }
-    }
-    fetchData();
-  }, []);
   return (
     <div className="max-w-7xl mx-auto">
 
@@ -34,7 +18,7 @@ export default function StrukturOrganisasi() {
 
       <section className="mb-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-             {news.map((ang: any) => (
+             {anggota.map((ang: any) => (
                 <div  
                   className={`p-6 bg-[#060771] text-white rounded-xl shadow-2xl transition duration-300 transform hover:scale-[1.02] h-full flex flex-col items-center text-center`}
                 >

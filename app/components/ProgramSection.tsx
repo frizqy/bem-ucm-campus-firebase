@@ -66,10 +66,10 @@ export default function ProgramSection() {
 
         <div className="text-center mt-12">
           <Link 
-            href="/program" 
+            href="/tentang" 
             className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all transform hover:scale-105 whitespace-nowrap cursor-pointer inline-block"
           >
-            Lihat Semua Program
+            Lihat Tentang Kami
           </Link>
         </div>
       </div>
